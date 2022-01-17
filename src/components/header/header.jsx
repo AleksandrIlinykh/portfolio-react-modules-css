@@ -3,7 +3,7 @@ export default function Header({ isMenuOpen, serIsMenuOpen }) {
   return (
     <nav className={"header " + (isMenuOpen && "active")}>
       <a href="#intro" className="logo">
-        <img src="../../images/logoAi" alt="Logo" />
+        <img src="../../images/logoAi.png" alt="Logo" />
       </a>
 
       <ul>
