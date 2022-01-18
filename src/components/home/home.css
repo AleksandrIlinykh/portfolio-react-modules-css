@@ -1,17 +1,14 @@
 .home {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-around;
+  align-items: center;
   background-color: white;
+  height: 100%;
 }
 
 .home .imgContainer {
+  margin: 20px;
   min-width: 370px;
   min-height: 370px;
   max-width: 600px;
@@ -21,82 +18,62 @@
   overflow: hidden;
   background-color: #34343c;
   border-radius: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items:center;
+  justify-content: center;
 }
 
 .home .imgContainer img {
   height: 105%;
 }
 
+
 .home .aboutTextContainer {
   text-align: right;
+  margin: 20px;
 }
 
 .home .aboutTextContainer h2 {
-  font-size: 60px;
+  font-family: roboto-v29-latin-700, serif;
+  font-size: 40px;
 }
 
 .home .aboutTextContainer p {
-  margin-top: 10px;
-  font-size: 40px;
+  margin-top: 20px;
+  font-family: roboto-v29-latin-300, serif;
+  font-size: 30px;
 }
+
 
 .home a {
   position: absolute;
   bottom: 2vh;
 }
-
-.home a img {
-  width: 30px;
-  -webkit-animation: blink 4s infinite;
-          animation: blink 4s infinite;
-}
-
-@-webkit-keyframes blink {
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes blink {
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 .home a.left {
   left: 5vw;
 }
-
 .home a.right {
   right: 5vw;
 }
+.home a img {
+  width: 30px;
+  z-index: 1;
+  animation: blink 4s infinite;
+}
 
-@media screen and (max-width: 900px) {
-  .home {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+@keyframes blink {
+  50%{
+    opacity: 0;
   }
-  .home .aboutTextContainer {
-    text-align: right;
+  100%{
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width:900px) {
+  .home {
+  flex-direction: column;  
+  justify-content: space-around;
   }
   .home .aboutTextContainer h2 {
     font-size: 40px;
@@ -105,4 +82,3 @@
     font-size: 20px;
   }
 }
-/*# sourceMappingURL=home.css.map */
