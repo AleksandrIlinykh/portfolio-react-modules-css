@@ -11,10 +11,11 @@ export default function Home() {
         </div>
 
         <div className="aboutTextContainer">
-          <h2>
+          <h1>
             Hi! <br />
             I'm Alexandr <br />a WEB developer <br />
-          </h2>
+          </h1>
+          <p>This is my self-presentation page</p>
           <p>Scroll down to know more about me</p>
         </div>
 

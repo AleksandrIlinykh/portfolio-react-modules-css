@@ -1,9 +1,10 @@
 import "./header.css";
+import logo from "../../images/logo.png";
 export default function Header({ isMenuOpen, serIsMenuOpen }) {
   return (
     <nav className={"header " + (isMenuOpen && "active")}>
       <a href="#intro" className="logo">
-        <img src="../../images/logoAi.png" alt="Logo" />
+        <img src={logo} alt="Logo" />
       </a>
 
       <ul>

@@ -9,15 +9,15 @@ import mapStyles from "./map.module.css";
 delete L.Icon.Default.prototype._getIconUrl;
 
 L.Icon.Default.mergeOptions({
-  iconRetinaUrl: require("leaflet/dist/images/marker-icon-2x.png"),
-  iconUrl: require("leaflet/dist/images/marker-icon.png"),
+  iconRetinaUrl: require("../../images/marker-icon.png"),
+  iconUrl: require("../../images/marker-icon.png"),
   shadowUrl: require("leaflet/dist/images/marker-shadow.png"),
 });
 export default function Map() {
   return (
     <MapContainer
       center={[52.6031, 39.5708]}
-      zoom={4}
+      zoom={3}
       scrollWheelZoom={false}
       id="map"
       style={{ width: "100%", height: "100%" }}
@@ -28,7 +28,7 @@ export default function Map() {
       />
       <Marker position={[56.8519, 60.6122]}>
         <Popup>
-          A pretty CSS3 popup. <br /> Easily customizable.
+          Ekaterinburg <br /> Denisova-Uralskogo boulevard
         </Popup>
       </Marker>
     </MapContainer>

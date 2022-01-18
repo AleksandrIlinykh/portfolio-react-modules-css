@@ -9,8 +9,8 @@
 
 .home .imgContainer {
   margin: 20px;
-  min-width: 370px;
-  min-height: 370px;
+  min-width: 200px;
+  min-height: 200px;
   max-width: 600px;
   max-height: 600px;
   width: 40vw;
@@ -32,18 +32,6 @@
   text-align: right;
   margin: 20px;
 }
-
-.home .aboutTextContainer h2 {
-  font-family: roboto-v29-latin-700, serif;
-  font-size: 40px;
-}
-
-.home .aboutTextContainer p {
-  margin-top: 20px;
-  font-family: roboto-v29-latin-300, serif;
-  font-size: 30px;
-}
-
 
 .home a {
   position: absolute;
@@ -82,3 +70,4 @@
     font-size: 20px;
   }
 }
+
