@@ -10,10 +10,11 @@ export default function Contacts() {
       <section className={contactsStyles.info}>
         <h2>Contact information</h2>
         <p>
-          Phone number: <strong>+7-902-255-21-32</strong>
+          Phone number: <br /> <strong>+7-902-255-21-32</strong>
         </p>
         <p>
-          Email: <strong>alexanderilinykhdev@yandex.ru</strong>
+          Email: <br />
+          <strong>alexanderilinykhdev@yandex.ru</strong>
         </p>
         <section className={contactsStyles.links}>
           <a href="https://github.com/AlexanderIlinykhDev/">
