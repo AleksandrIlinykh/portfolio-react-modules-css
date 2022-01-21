@@ -1,29 +1,41 @@
+import headerStyles from "./header.module.css";
 import "./header.css";
 import logo from "../../images/logo.png";
-export default function Header({ isMenuOpen, serIsMenuOpen }) {
+export default function Header({ isMenuOpen, setIsMenuOpen }) {
   return (
-    <nav className={"header " + (isMenuOpen && "active")}>
-      <a href="#intro" className="logo">
-        <img src={logo} alt="Logo" />
+    <nav className={headerStyles.header}>
+      <a href="#intro" className={headerStyles.logo}>
+        <img src={logo} alt="Logo" className={headerStyles.img} />
       </a>
 
-      <ul>
-        <li>home</li>
-        <li>about</li>
-        <li>skills</li>
-        <li>portfolio</li>
-        <li>contact</li>
+      <ul
+        className={
+          headerStyles.headerNav +
+          " " +
+          (isMenuOpen && headerStyles.headerNavActive)
+        }
+      >
+        <li className={headerStyles.headerNavElem}>home</li>
+        <li className={headerStyles.headerNavElem}>about</li>
+        <li className={headerStyles.headerNavElem}>skills</li>
+        <li className={headerStyles.headerNavElem}>portfolio</li>
+        <li className={headerStyles.headerNavElem}>contact</li>
       </ul>
 
       <div
-        className="hamburger"
+        className={
+          headerStyles.hamburger +
+          " " +
+          (isMenuOpen && headerStyles.hamburgerActive)
+        }
         onClick={() => {
-          serIsMenuOpen(!isMenuOpen);
+          setIsMenuOpen(!isMenuOpen);
+          console.log(isMenuOpen);
         }}
       >
-        <span className="line1"></span>
-        <span className="line2"></span>
-        <span className="line3"></span>
+        <span className={headerStyles.hamburgerLine}></span>
+        <span className={headerStyles.hamburgerLine}></span>
+        <span className={headerStyles.hamburgerLine}></span>
       </div>
     </nav>
   );
