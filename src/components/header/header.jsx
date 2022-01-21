@@ -1,5 +1,4 @@
 import headerStyles from "./header.module.css";
-import "./header.css";
 import logo from "../../images/logo.png";
 export default function Header({ isMenuOpen, setIsMenuOpen }) {
   return (
