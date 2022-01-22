@@ -1,5 +1,7 @@
 import headerStyles from "./header.module.css";
 import logo from "../../images/logo.png";
+import ThemeToggler from "./theme-toggler/theme-toggler";
+
 export default function Header({ isMenuOpen, setIsMenuOpen }) {
   return (
     <nav className={headerStyles.header}>
@@ -21,6 +23,7 @@ export default function Header({ isMenuOpen, setIsMenuOpen }) {
         <li className={headerStyles.headerNavElem}>contact</li>
       </ul>
 
+      <ThemeToggler />
       <div
         className={
           headerStyles.hamburger +

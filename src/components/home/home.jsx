@@ -1,4 +1,3 @@
-import "./home.css";
 import homeStyles from "./home.module.css";
 import myPhoto from "../../images/myPhoto.png";
 import arrowDown from "../../images/arrow-down.png";
